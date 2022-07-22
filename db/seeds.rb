@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Playground.destroy_all
+
+50.times do
+  playground = Playground.create(
+    name: Faker::Name.name 
+  )
+  puts "playground \"#{ playground.name }\" created!"
+end
+puts "--DONE"
