@@ -8,7 +8,7 @@
 
 Playground.destroy_all
 
-50.times do
+55.times do
   playground = Playground.create(
     name: Faker::Name.name 
   )
